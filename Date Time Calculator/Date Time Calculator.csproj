@@ -33,6 +33,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Guna.UI2, Version=2.0.3.5, Culture=neutral, PublicKeyToken=4015e4865bda28a4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Guna.UI2.WinForms.2.0.3.5\lib\net40\Guna.UI2.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -46,6 +49,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Birthday_Informer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Birthday_Informer.Designer.cs">
+      <DependentUpon>Birthday_Informer.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -54,6 +63,33 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserControls\Date_Comparer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Date_Comparer.Designer.cs">
+      <DependentUpon>Date_Comparer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Date_Working_Counter.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Date_Working_Counter.Designer.cs">
+      <DependentUpon>Date_Working_Counter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Leap_Counter.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Leap_Counter.Designer.cs">
+      <DependentUpon>Leap_Counter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Time_Converter.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Time_Converter.Designer.cs">
+      <DependentUpon>Time_Converter.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Birthday_Informer.resx">
+      <DependentUpon>Birthday_Informer.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -66,6 +102,19 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="UserControls\Date_Comparer.resx">
+      <DependentUpon>Date_Comparer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Date_Working_Counter.resx">
+      <DependentUpon>Date_Working_Counter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Leap_Counter.resx">
+      <DependentUpon>Leap_Counter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Time_Converter.resx">
+      <DependentUpon>Time_Converter.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -79,5 +128,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
