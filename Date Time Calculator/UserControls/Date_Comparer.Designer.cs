@@ -179,7 +179,7 @@
             this.guna2HtmlLabel7.Name = "guna2HtmlLabel7";
             this.guna2HtmlLabel7.Size = new System.Drawing.Size(171, 23);
             this.guna2HtmlLabel7.TabIndex = 16;
-            this.guna2HtmlLabel7.Text = "Всешо дней прошло:";
+            this.guna2HtmlLabel7.Text = "Всего дней прошло:";
             // 
             // guna2HtmlLabel6
             // 
