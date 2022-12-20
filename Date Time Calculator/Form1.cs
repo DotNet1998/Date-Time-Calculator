@@ -1,4 +1,5 @@
 ﻿using Date_Time_Calculator.UserControls;
+using Guna.UI2.WinForms;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -16,8 +17,12 @@ namespace Date_Time_Calculator
         public Form1()
         {
             InitializeComponent();
+
+
             Date_Comparer comparer = new Date_Comparer();
             addUserControl(comparer);
+
+            
         }
 
         private void addUserControl(UserControl userControl)
@@ -31,7 +36,7 @@ namespace Date_Time_Calculator
         {
             Date_Comparer comparer = new Date_Comparer();
             addUserControl(comparer);
-
+         
         }
 
         private void guna2Button24_Click(object sender, EventArgs e)

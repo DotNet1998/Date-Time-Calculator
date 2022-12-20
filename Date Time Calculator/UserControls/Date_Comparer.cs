@@ -15,6 +15,15 @@ namespace Date_Time_Calculator.UserControls
         public Date_Comparer()
         {
             InitializeComponent();
+            guna2DateTimePicker1.Format = DateTimePickerFormat.Custom;
+            guna2DateTimePicker1.CustomFormat = "mm/dd/yyyy hh:mm:ss";
+            guna2DateTimePicker2.Format = DateTimePickerFormat.Custom;
+            guna2DateTimePicker2.CustomFormat = "mm/dd/yyyy hh:mm:ss";
+        }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
