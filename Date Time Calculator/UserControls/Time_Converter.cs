@@ -15,10 +15,7 @@ namespace Date_Time_Calculator.UserControls
         public Time_Converter()
         {
             InitializeComponent();
-            guna2DateTimePicker1.Format = DateTimePickerFormat.Custom;
-            guna2DateTimePicker1.CustomFormat = "mm/dd/yyyy hh:mm:ss";
-            guna2DateTimePicker2.Format = DateTimePickerFormat.Custom;
-            guna2DateTimePicker2.CustomFormat = "mm/dd/yyyy hh:mm:ss";
+          
         }
     }
 }
