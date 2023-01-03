@@ -32,6 +32,11 @@
             this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
+            this.lAlldays = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lDay = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lWeek = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lMounse = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lYear = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel7 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel6 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel5 = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -39,23 +44,18 @@
             this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2Panel4 = new Guna.UI2.WinForms.Guna2Panel();
+            this.lMilisecounds = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lSecound = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lMinuts = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lHour = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel11 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel10 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel9 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel8 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2DateTimePicker2 = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.guna2DateTimePicker1 = new Guna.UI2.WinForms.Guna2DateTimePicker();
-            this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.lYear = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.lMounse = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.lWeek = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.lDay = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.lHour = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.lMinuts = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.lSecound = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.lMilisecounds = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.lAlldays = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2Panel1.SuspendLayout();
             this.guna2Panel3.SuspendLayout();
             this.guna2Panel2.SuspendLayout();
@@ -78,12 +78,12 @@
             // 
             this.guna2Panel3.BorderColor = System.Drawing.Color.LightGray;
             this.guna2Panel3.BorderThickness = 1;
+            this.guna2Panel3.Controls.Add(this.guna2DateTimePicker2);
+            this.guna2Panel3.Controls.Add(this.guna2DateTimePicker1);
             this.guna2Panel3.Controls.Add(this.guna2Button1);
             this.guna2Panel3.Controls.Add(this.guna2Panel2);
             this.guna2Panel3.Controls.Add(this.guna2Panel4);
             this.guna2Panel3.Controls.Add(this.guna2PictureBox1);
-            this.guna2Panel3.Controls.Add(this.guna2DateTimePicker2);
-            this.guna2Panel3.Controls.Add(this.guna2DateTimePicker1);
             this.guna2Panel3.Location = new System.Drawing.Point(92, 75);
             this.guna2Panel3.Name = "guna2Panel3";
             this.guna2Panel3.Size = new System.Drawing.Size(649, 278);
@@ -127,6 +127,61 @@
             this.guna2Panel2.Name = "guna2Panel2";
             this.guna2Panel2.Size = new System.Drawing.Size(430, 145);
             this.guna2Panel2.TabIndex = 23;
+            // 
+            // lAlldays
+            // 
+            this.lAlldays.AutoSize = false;
+            this.lAlldays.BackColor = System.Drawing.Color.Transparent;
+            this.lAlldays.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lAlldays.Location = new System.Drawing.Point(368, 32);
+            this.lAlldays.Name = "lAlldays";
+            this.lAlldays.Size = new System.Drawing.Size(21, 23);
+            this.lAlldays.TabIndex = 21;
+            this.lAlldays.Text = "0";
+            // 
+            // lDay
+            // 
+            this.lDay.AutoSize = false;
+            this.lDay.BackColor = System.Drawing.Color.Transparent;
+            this.lDay.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lDay.Location = new System.Drawing.Point(60, 119);
+            this.lDay.Name = "lDay";
+            this.lDay.Size = new System.Drawing.Size(41, 23);
+            this.lDay.TabIndex = 20;
+            this.lDay.Text = "0";
+            // 
+            // lWeek
+            // 
+            this.lWeek.AutoSize = false;
+            this.lWeek.BackColor = System.Drawing.Color.Transparent;
+            this.lWeek.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lWeek.Location = new System.Drawing.Point(75, 90);
+            this.lWeek.Name = "lWeek";
+            this.lWeek.Size = new System.Drawing.Size(37, 23);
+            this.lWeek.TabIndex = 19;
+            this.lWeek.Text = "0";
+            // 
+            // lMounse
+            // 
+            this.lMounse.AutoSize = false;
+            this.lMounse.BackColor = System.Drawing.Color.Transparent;
+            this.lMounse.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lMounse.Location = new System.Drawing.Point(88, 61);
+            this.lMounse.Name = "lMounse";
+            this.lMounse.Size = new System.Drawing.Size(37, 23);
+            this.lMounse.TabIndex = 18;
+            this.lMounse.Text = "0";
+            // 
+            // lYear
+            // 
+            this.lYear.AutoSize = false;
+            this.lYear.BackColor = System.Drawing.Color.Transparent;
+            this.lYear.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lYear.Location = new System.Drawing.Point(48, 32);
+            this.lYear.Name = "lYear";
+            this.lYear.Size = new System.Drawing.Size(126, 23);
+            this.lYear.TabIndex = 17;
+            this.lYear.Text = "0";
             // 
             // guna2HtmlLabel7
             // 
@@ -211,6 +266,50 @@
             this.guna2Panel4.Size = new System.Drawing.Size(430, 42);
             this.guna2Panel4.TabIndex = 22;
             // 
+            // lMilisecounds
+            // 
+            this.lMilisecounds.AutoSize = false;
+            this.lMilisecounds.BackColor = System.Drawing.Color.Transparent;
+            this.lMilisecounds.Font = new System.Drawing.Font("Century Gothic", 9.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lMilisecounds.Location = new System.Drawing.Point(337, 11);
+            this.lMilisecounds.Name = "lMilisecounds";
+            this.lMilisecounds.Size = new System.Drawing.Size(41, 23);
+            this.lMilisecounds.TabIndex = 24;
+            this.lMilisecounds.Text = "0";
+            // 
+            // lSecound
+            // 
+            this.lSecound.AutoSize = false;
+            this.lSecound.BackColor = System.Drawing.Color.Transparent;
+            this.lSecound.Font = new System.Drawing.Font("Century Gothic", 9.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lSecound.Location = new System.Drawing.Point(235, 11);
+            this.lSecound.Name = "lSecound";
+            this.lSecound.Size = new System.Drawing.Size(29, 23);
+            this.lSecound.TabIndex = 23;
+            this.lSecound.Text = "0";
+            // 
+            // lMinuts
+            // 
+            this.lMinuts.AutoSize = false;
+            this.lMinuts.BackColor = System.Drawing.Color.Transparent;
+            this.lMinuts.Font = new System.Drawing.Font("Century Gothic", 9.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lMinuts.Location = new System.Drawing.Point(159, 11);
+            this.lMinuts.Name = "lMinuts";
+            this.lMinuts.Size = new System.Drawing.Size(28, 23);
+            this.lMinuts.TabIndex = 22;
+            this.lMinuts.Text = "0";
+            // 
+            // lHour
+            // 
+            this.lHour.AutoSize = false;
+            this.lHour.BackColor = System.Drawing.Color.Transparent;
+            this.lHour.Font = new System.Drawing.Font("Century Gothic", 9.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lHour.Location = new System.Drawing.Point(86, 11);
+            this.lHour.Name = "lHour";
+            this.lHour.Size = new System.Drawing.Size(26, 23);
+            this.lHour.TabIndex = 21;
+            this.lHour.Text = "0";
+            // 
             // guna2HtmlLabel11
             // 
             this.guna2HtmlLabel11.AutoSize = false;
@@ -267,38 +366,6 @@
             this.guna2PictureBox1.TabIndex = 9;
             this.guna2PictureBox1.TabStop = false;
             // 
-            // guna2DateTimePicker2
-            // 
-            this.guna2DateTimePicker2.BorderColor = System.Drawing.Color.Silver;
-            this.guna2DateTimePicker2.BorderThickness = 1;
-            this.guna2DateTimePicker2.Checked = true;
-            this.guna2DateTimePicker2.FillColor = System.Drawing.Color.White;
-            this.guna2DateTimePicker2.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2DateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.guna2DateTimePicker2.Location = new System.Drawing.Point(409, 18);
-            this.guna2DateTimePicker2.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.guna2DateTimePicker2.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.guna2DateTimePicker2.Name = "guna2DateTimePicker2";
-            this.guna2DateTimePicker2.Size = new System.Drawing.Size(200, 36);
-            this.guna2DateTimePicker2.TabIndex = 8;
-            this.guna2DateTimePicker2.Value = new System.DateTime(2022, 12, 20, 13, 8, 54, 812);
-            // 
-            // guna2DateTimePicker1
-            // 
-            this.guna2DateTimePicker1.BorderColor = System.Drawing.Color.Silver;
-            this.guna2DateTimePicker1.BorderThickness = 1;
-            this.guna2DateTimePicker1.Checked = true;
-            this.guna2DateTimePicker1.FillColor = System.Drawing.Color.White;
-            this.guna2DateTimePicker1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.guna2DateTimePicker1.Location = new System.Drawing.Point(40, 18);
-            this.guna2DateTimePicker1.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.guna2DateTimePicker1.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.guna2DateTimePicker1.Name = "guna2DateTimePicker1";
-            this.guna2DateTimePicker1.Size = new System.Drawing.Size(200, 36);
-            this.guna2DateTimePicker1.TabIndex = 7;
-            this.guna2DateTimePicker1.Value = new System.DateTime(2022, 12, 20, 13, 8, 44, 514);
-            // 
             // guna2HtmlLabel1
             // 
             this.guna2HtmlLabel1.AutoSize = false;
@@ -311,104 +378,39 @@
             this.guna2HtmlLabel1.TabIndex = 18;
             this.guna2HtmlLabel1.Text = "Date Comparer";
             // 
-            // lYear
+            // guna2DateTimePicker2
             // 
-            this.lYear.AutoSize = false;
-            this.lYear.BackColor = System.Drawing.Color.Transparent;
-            this.lYear.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lYear.Location = new System.Drawing.Point(48, 32);
-            this.lYear.Name = "lYear";
-            this.lYear.Size = new System.Drawing.Size(126, 23);
-            this.lYear.TabIndex = 17;
-            this.lYear.Text = "0";
+            this.guna2DateTimePicker2.BorderColor = System.Drawing.Color.Silver;
+            this.guna2DateTimePicker2.BorderThickness = 1;
+            this.guna2DateTimePicker2.Checked = true;
+            this.guna2DateTimePicker2.CustomFormat = "MM/dd/yyyy HH:mm";
+            this.guna2DateTimePicker2.FillColor = System.Drawing.Color.White;
+            this.guna2DateTimePicker2.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2DateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.guna2DateTimePicker2.Location = new System.Drawing.Point(409, 21);
+            this.guna2DateTimePicker2.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.guna2DateTimePicker2.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.guna2DateTimePicker2.Name = "guna2DateTimePicker2";
+            this.guna2DateTimePicker2.Size = new System.Drawing.Size(200, 36);
+            this.guna2DateTimePicker2.TabIndex = 25;
+            this.guna2DateTimePicker2.Value = new System.DateTime(2022, 12, 20, 13, 8, 54, 812);
             // 
-            // lMounse
+            // guna2DateTimePicker1
             // 
-            this.lMounse.AutoSize = false;
-            this.lMounse.BackColor = System.Drawing.Color.Transparent;
-            this.lMounse.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lMounse.Location = new System.Drawing.Point(88, 61);
-            this.lMounse.Name = "lMounse";
-            this.lMounse.Size = new System.Drawing.Size(21, 23);
-            this.lMounse.TabIndex = 18;
-            this.lMounse.Text = "0";
-            // 
-            // lWeek
-            // 
-            this.lWeek.AutoSize = false;
-            this.lWeek.BackColor = System.Drawing.Color.Transparent;
-            this.lWeek.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lWeek.Location = new System.Drawing.Point(75, 90);
-            this.lWeek.Name = "lWeek";
-            this.lWeek.Size = new System.Drawing.Size(21, 23);
-            this.lWeek.TabIndex = 19;
-            this.lWeek.Text = "0";
-            // 
-            // lDay
-            // 
-            this.lDay.AutoSize = false;
-            this.lDay.BackColor = System.Drawing.Color.Transparent;
-            this.lDay.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lDay.Location = new System.Drawing.Point(60, 119);
-            this.lDay.Name = "lDay";
-            this.lDay.Size = new System.Drawing.Size(25, 23);
-            this.lDay.TabIndex = 20;
-            this.lDay.Text = "0";
-            // 
-            // lHour
-            // 
-            this.lHour.AutoSize = false;
-            this.lHour.BackColor = System.Drawing.Color.Transparent;
-            this.lHour.Font = new System.Drawing.Font("Century Gothic", 9.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lHour.Location = new System.Drawing.Point(86, 11);
-            this.lHour.Name = "lHour";
-            this.lHour.Size = new System.Drawing.Size(15, 23);
-            this.lHour.TabIndex = 21;
-            this.lHour.Text = "0";
-            // 
-            // lMinuts
-            // 
-            this.lMinuts.AutoSize = false;
-            this.lMinuts.BackColor = System.Drawing.Color.Transparent;
-            this.lMinuts.Font = new System.Drawing.Font("Century Gothic", 9.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lMinuts.Location = new System.Drawing.Point(159, 11);
-            this.lMinuts.Name = "lMinuts";
-            this.lMinuts.Size = new System.Drawing.Size(15, 23);
-            this.lMinuts.TabIndex = 22;
-            this.lMinuts.Text = "0";
-            // 
-            // lSecound
-            // 
-            this.lSecound.AutoSize = false;
-            this.lSecound.BackColor = System.Drawing.Color.Transparent;
-            this.lSecound.Font = new System.Drawing.Font("Century Gothic", 9.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lSecound.Location = new System.Drawing.Point(235, 11);
-            this.lSecound.Name = "lSecound";
-            this.lSecound.Size = new System.Drawing.Size(15, 23);
-            this.lSecound.TabIndex = 23;
-            this.lSecound.Text = "0";
-            // 
-            // lMilisecounds
-            // 
-            this.lMilisecounds.AutoSize = false;
-            this.lMilisecounds.BackColor = System.Drawing.Color.Transparent;
-            this.lMilisecounds.Font = new System.Drawing.Font("Century Gothic", 9.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lMilisecounds.Location = new System.Drawing.Point(337, 11);
-            this.lMilisecounds.Name = "lMilisecounds";
-            this.lMilisecounds.Size = new System.Drawing.Size(15, 23);
-            this.lMilisecounds.TabIndex = 24;
-            this.lMilisecounds.Text = "0";
-            // 
-            // lAlldays
-            // 
-            this.lAlldays.AutoSize = false;
-            this.lAlldays.BackColor = System.Drawing.Color.Transparent;
-            this.lAlldays.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lAlldays.Location = new System.Drawing.Point(368, 32);
-            this.lAlldays.Name = "lAlldays";
-            this.lAlldays.Size = new System.Drawing.Size(21, 23);
-            this.lAlldays.TabIndex = 21;
-            this.lAlldays.Text = "0";
+            this.guna2DateTimePicker1.BorderColor = System.Drawing.Color.Silver;
+            this.guna2DateTimePicker1.BorderThickness = 1;
+            this.guna2DateTimePicker1.Checked = true;
+            this.guna2DateTimePicker1.CustomFormat = "MM/dd/yyyy HH:mm";
+            this.guna2DateTimePicker1.FillColor = System.Drawing.Color.White;
+            this.guna2DateTimePicker1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.guna2DateTimePicker1.Location = new System.Drawing.Point(40, 21);
+            this.guna2DateTimePicker1.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.guna2DateTimePicker1.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.guna2DateTimePicker1.Name = "guna2DateTimePicker1";
+            this.guna2DateTimePicker1.Size = new System.Drawing.Size(200, 36);
+            this.guna2DateTimePicker1.TabIndex = 24;
+            this.guna2DateTimePicker1.Value = new System.DateTime(2022, 12, 20, 13, 8, 44, 514);
             // 
             // Date_Comparer
             // 
@@ -450,13 +452,13 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel lAlldays;
         private Guna.UI2.WinForms.Guna2HtmlLabel lDay;
         private Guna.UI2.WinForms.Guna2HtmlLabel lWeek;
-        private Guna.UI2.WinForms.Guna2HtmlLabel lMounse;
         private Guna.UI2.WinForms.Guna2HtmlLabel lYear;
         private Guna.UI2.WinForms.Guna2HtmlLabel lMilisecounds;
         private Guna.UI2.WinForms.Guna2HtmlLabel lSecound;
         private Guna.UI2.WinForms.Guna2HtmlLabel lMinuts;
         private Guna.UI2.WinForms.Guna2HtmlLabel lHour;
-        public Guna.UI2.WinForms.Guna2DateTimePicker guna2DateTimePicker2;
-        public Guna.UI2.WinForms.Guna2DateTimePicker guna2DateTimePicker1;
+        public Guna.UI2.WinForms.Guna2HtmlLabel lMounse;
+        private Guna.UI2.WinForms.Guna2DateTimePicker guna2DateTimePicker2;
+        private Guna.UI2.WinForms.Guna2DateTimePicker guna2DateTimePicker1;
     }
 }
