@@ -21,8 +21,17 @@ namespace Date_Time_Calculator.UserControls
         {
             DateTime a = guna2DateTimePicker1.Value;
             DateTime b = guna2DateTimePicker2.Value;
+            int y = 0;
 
-
+            while ((a < b && (a.AddYears(1) < b)))//ГОДА
+            {
+                a = a.AddYears(1);
+                if (a.Year % 4 == 0)
+                {
+                    y++;
+                }
+            }
+            res.Text = y.ToString();
         }
     }
 }

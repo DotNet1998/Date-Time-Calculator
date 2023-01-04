@@ -38,7 +38,7 @@
             this.guna2DateTimePicker2 = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.guna2DateTimePicker1 = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.Res = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.res = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2Panel1.SuspendLayout();
             this.guna2Panel3.SuspendLayout();
             this.guna2Panel2.SuspendLayout();
@@ -74,7 +74,7 @@
             // 
             this.guna2Panel2.BorderColor = System.Drawing.Color.LightGray;
             this.guna2Panel2.BorderThickness = 1;
-            this.guna2Panel2.Controls.Add(this.Res);
+            this.guna2Panel2.Controls.Add(this.res);
             this.guna2Panel2.Controls.Add(this.guna2HtmlLabel3);
             this.guna2Panel2.Controls.Add(this.guna2HtmlLabel2);
             this.guna2Panel2.Location = new System.Drawing.Point(40, 70);
@@ -179,16 +179,16 @@
             this.guna2HtmlLabel1.TabIndex = 18;
             this.guna2HtmlLabel1.Text = "Leap Counter";
             // 
-            // Res
+            // res
             // 
-            this.Res.AutoSize = false;
-            this.Res.BackColor = System.Drawing.Color.Transparent;
-            this.Res.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Res.Location = new System.Drawing.Point(231, 69);
-            this.Res.Name = "Res";
-            this.Res.Size = new System.Drawing.Size(18, 23);
-            this.Res.TabIndex = 17;
-            this.Res.Text = "0";
+            this.res.AutoSize = false;
+            this.res.BackColor = System.Drawing.Color.Transparent;
+            this.res.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.res.Location = new System.Drawing.Point(231, 69);
+            this.res.Name = "res";
+            this.res.Size = new System.Drawing.Size(27, 23);
+            this.res.TabIndex = 17;
+            this.res.Text = "0";
             // 
             // Leap_Counter
             // 
@@ -218,6 +218,6 @@
         private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel3;
-        private Guna.UI2.WinForms.Guna2HtmlLabel Res;
+        private Guna.UI2.WinForms.Guna2HtmlLabel res;
     }
 }
