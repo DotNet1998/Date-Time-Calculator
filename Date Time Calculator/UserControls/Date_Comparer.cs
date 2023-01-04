@@ -15,24 +15,19 @@ namespace Date_Time_Calculator.UserControls
     {
         public Date_Comparer()
         {
-            InitializeComponent();
-        /*  guna2DateTimePicker1.Format = DateTimePickerFormat.Custom;
-            guna2DateTimePicker1.CustomFormat = "mm/dd/yyyy hh:mm:ss";
-            guna2DateTimePicker2.Format = DateTimePickerFormat.Custom;
-            guna2DateTimePicker2.CustomFormat = "mm/dd/yyyy hh:mm:ss"; */
+            InitializeComponent();     
         }
-        public int DaysOfMonth(DateTime a)
-        {
-            a = guna2DateTimePicker1.Value;
-            int MonthsOfa = DateTime.DaysInMonth(a.Year, a.Month);
-            return MonthsOfa;
-
-        }
+     
         private void guna2Button1_Click(object sender, EventArgs e)
         {
-        
-            var a = guna2DateTimePicker1.Value;
-            var b = guna2DateTimePicker2.Value;
+           
+            
+            DateTime a = guna2DateTimePicker1.Value;
+            DateTime b = guna2DateTimePicker2.Value;
+
+            TimeSpan res = b - a;
+            lAlldays.Text = res.Days.ToString();
+
             var y = 0;
             var m = 0;
             var w = 0;
@@ -41,8 +36,9 @@ namespace Date_Time_Calculator.UserControls
             var mn = 0;
             var s = 0;
             var ml = 0;
-
+           
             MessageBox.Show($"{a.ToString()},{b.ToString()}");
+
             while ((a < b  && (a.AddYears(1) < b)))//ГОДА
                 {
                      a = a.AddYears(1);
@@ -103,6 +99,12 @@ namespace Date_Time_Calculator.UserControls
                 ml++;
             }
             lMilisecounds.Text = ml.ToString();
+
+           
+
+            
+
+
 
         }
     }

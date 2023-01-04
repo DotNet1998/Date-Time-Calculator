@@ -135,7 +135,7 @@
             this.lAlldays.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lAlldays.Location = new System.Drawing.Point(368, 32);
             this.lAlldays.Name = "lAlldays";
-            this.lAlldays.Size = new System.Drawing.Size(21, 23);
+            this.lAlldays.Size = new System.Drawing.Size(38, 23);
             this.lAlldays.TabIndex = 21;
             this.lAlldays.Text = "0";
             // 
@@ -271,7 +271,7 @@
             this.lMilisecounds.AutoSize = false;
             this.lMilisecounds.BackColor = System.Drawing.Color.Transparent;
             this.lMilisecounds.Font = new System.Drawing.Font("Century Gothic", 9.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lMilisecounds.Location = new System.Drawing.Point(337, 11);
+            this.lMilisecounds.Location = new System.Drawing.Point(345, 11);
             this.lMilisecounds.Name = "lMilisecounds";
             this.lMilisecounds.Size = new System.Drawing.Size(41, 23);
             this.lMilisecounds.TabIndex = 24;
@@ -317,9 +317,9 @@
             this.guna2HtmlLabel11.Font = new System.Drawing.Font("Century Gothic", 9.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel11.Location = new System.Drawing.Point(265, 11);
             this.guna2HtmlLabel11.Name = "guna2HtmlLabel11";
-            this.guna2HtmlLabel11.Size = new System.Drawing.Size(73, 23);
+            this.guna2HtmlLabel11.Size = new System.Drawing.Size(84, 23);
             this.guna2HtmlLabel11.TabIndex = 12;
-            this.guna2HtmlLabel11.Text = "Милиекунд:";
+            this.guna2HtmlLabel11.Text = "Милисекунд:";
             // 
             // guna2HtmlLabel10
             // 
