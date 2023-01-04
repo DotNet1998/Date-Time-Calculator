@@ -24,44 +24,29 @@ namespace Date_Time_Calculator.UserControls
             
             int y = 0;
             
-           
             while ((a < b && (a.AddDays(1) < b))) // Дни
             {
                 a = a.AddDays(1);
                 if ( Monday.Checked == true && a.DayOfWeek == DayOfWeek.Monday )
-                {
-                    y++;
-                }
-              
+                y++;
+                
                 if (Tuesday.Checked == true && a.DayOfWeek == DayOfWeek.Tuesday)
-                {
-                    y++;
-                }
-             
+                y++;
+                
                 if (Wednesday.Checked == true && a.DayOfWeek == DayOfWeek.Wednesday)
-                {
-                    y++;
-                }
-            
+                y++;
+                
                 if (Thursday.Checked == true && a.DayOfWeek == DayOfWeek.Thursday)
-                {
-                   y++;
-                }
+                y++;
             
                 if (Friday.Checked == true && a.DayOfWeek == DayOfWeek.Friday)
-                {
-                    y++;
-                }
+                y++;
         
                 if (Saturday.Checked == true && a.DayOfWeek == DayOfWeek.Saturday)
-                {
-                    y++;
-                }
+                y++;
               
                 if (Sunday.Checked == true && a.DayOfWeek == DayOfWeek.Sunday)
-                {
-                    y++;
-                }            
+                y++;            
             }
                  res.Text = y.ToString();
          

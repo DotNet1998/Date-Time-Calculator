@@ -16,5 +16,13 @@ namespace Date_Time_Calculator.UserControls
         {
             InitializeComponent();
         }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+            DateTime a = guna2DateTimePicker1.Value;
+            DateTime b = guna2DateTimePicker2.Value;
+
+
+        }
     }
 }
