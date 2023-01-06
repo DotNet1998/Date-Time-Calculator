@@ -37,19 +37,15 @@ namespace Date_Time_Calculator.UserControls
             var s = 0;
             var ml = 0;
            
-            MessageBox.Show($"{a.ToString()},{b.ToString()}");
-
             while ((a < b  && (a.AddYears(1) < b)))//ГОДА
                 {
                      a = a.AddYears(1);
                      y++;   // плюсую  add years. 
-
-                MessageBox.Show(a.ToString());
             }
 
             lYear.Text = y.ToString();
 
-            MessageBox.Show(a.ToString());
+           
 
             while  ((a < b && (a.AddMonths(1) < b))) // Месяца
             {
