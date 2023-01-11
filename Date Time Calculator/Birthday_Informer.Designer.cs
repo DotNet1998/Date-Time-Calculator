@@ -36,15 +36,12 @@
             this.guna2HtmlLabel12 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
-            this.Year5 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.Year4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.Year3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.Year2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.Year5 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.Year = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel19 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel17 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel18 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.brth = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel13 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2DateTimePicker2 = new Guna.UI2.WinForms.Guna2DateTimePicker();
@@ -153,20 +150,28 @@
             // 
             this.guna2Panel2.BorderColor = System.Drawing.Color.LightGray;
             this.guna2Panel2.BorderThickness = 1;
-            this.guna2Panel2.Controls.Add(this.Year5);
-            this.guna2Panel2.Controls.Add(this.Year4);
-            this.guna2Panel2.Controls.Add(this.Year3);
             this.guna2Panel2.Controls.Add(this.Year2);
+            this.guna2Panel2.Controls.Add(this.Year5);
             this.guna2Panel2.Controls.Add(this.Year);
             this.guna2Panel2.Controls.Add(this.guna2HtmlLabel19);
             this.guna2Panel2.Controls.Add(this.guna2HtmlLabel2);
-            this.guna2Panel2.Controls.Add(this.guna2HtmlLabel17);
-            this.guna2Panel2.Controls.Add(this.guna2HtmlLabel18);
+            this.guna2Panel2.Controls.Add(this.brth);
             this.guna2Panel2.Controls.Add(this.guna2HtmlLabel13);
             this.guna2Panel2.Location = new System.Drawing.Point(71, 59);
             this.guna2Panel2.Name = "guna2Panel2";
             this.guna2Panel2.Size = new System.Drawing.Size(475, 169);
             this.guna2Panel2.TabIndex = 31;
+            // 
+            // Year2
+            // 
+            this.Year2.AutoSize = false;
+            this.Year2.BackColor = System.Drawing.Color.Transparent;
+            this.Year2.Font = new System.Drawing.Font("Century Gothic", 10.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Year2.Location = new System.Drawing.Point(240, 38);
+            this.Year2.Name = "Year2";
+            this.Year2.Size = new System.Drawing.Size(216, 23);
+            this.Year2.TabIndex = 21;
+            this.Year2.Text = "0";
             // 
             // Year5
             // 
@@ -178,39 +183,6 @@
             this.Year5.Size = new System.Drawing.Size(134, 23);
             this.Year5.TabIndex = 20;
             this.Year5.Text = "0";
-            // 
-            // Year4
-            // 
-            this.Year4.AutoSize = false;
-            this.Year4.BackColor = System.Drawing.Color.Transparent;
-            this.Year4.Font = new System.Drawing.Font("Century Gothic", 10.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Year4.Location = new System.Drawing.Point(184, 102);
-            this.Year4.Name = "Year4";
-            this.Year4.Size = new System.Drawing.Size(134, 23);
-            this.Year4.TabIndex = 19;
-            this.Year4.Text = "0";
-            // 
-            // Year3
-            // 
-            this.Year3.AutoSize = false;
-            this.Year3.BackColor = System.Drawing.Color.Transparent;
-            this.Year3.Font = new System.Drawing.Font("Century Gothic", 10.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Year3.Location = new System.Drawing.Point(155, 70);
-            this.Year3.Name = "Year3";
-            this.Year3.Size = new System.Drawing.Size(134, 23);
-            this.Year3.TabIndex = 18;
-            this.Year3.Text = "0";
-            // 
-            // Year2
-            // 
-            this.Year2.AutoSize = false;
-            this.Year2.BackColor = System.Drawing.Color.Transparent;
-            this.Year2.Font = new System.Drawing.Font("Century Gothic", 10.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Year2.Location = new System.Drawing.Point(244, 39);
-            this.Year2.Name = "Year2";
-            this.Year2.Size = new System.Drawing.Size(217, 23);
-            this.Year2.TabIndex = 17;
-            this.Year2.Text = "0";
             // 
             // Year
             // 
@@ -245,27 +217,16 @@
             this.guna2HtmlLabel2.TabIndex = 11;
             this.guna2HtmlLabel2.Text = "Сколько живет:";
             // 
-            // guna2HtmlLabel17
+            // brth
             // 
-            this.guna2HtmlLabel17.AutoSize = false;
-            this.guna2HtmlLabel17.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel17.Font = new System.Drawing.Font("Century Gothic", 10.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel17.Location = new System.Drawing.Point(6, 102);
-            this.guna2HtmlLabel17.Name = "guna2HtmlLabel17";
-            this.guna2HtmlLabel17.Size = new System.Drawing.Size(181, 19);
-            this.guna2HtmlLabel17.TabIndex = 13;
-            this.guna2HtmlLabel17.Text = "18 лет исполнится через:";
-            // 
-            // guna2HtmlLabel18
-            // 
-            this.guna2HtmlLabel18.AutoSize = false;
-            this.guna2HtmlLabel18.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel18.Font = new System.Drawing.Font("Century Gothic", 10.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel18.Location = new System.Drawing.Point(6, 70);
-            this.guna2HtmlLabel18.Name = "guna2HtmlLabel18";
-            this.guna2HtmlLabel18.Size = new System.Drawing.Size(153, 19);
-            this.guna2HtmlLabel18.TabIndex = 14;
-            this.guna2HtmlLabel18.Text = "18 лет исполнилось:";
+            this.brth.AutoSize = false;
+            this.brth.BackColor = System.Drawing.Color.Transparent;
+            this.brth.Font = new System.Drawing.Font("Century Gothic", 10.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.brth.Location = new System.Drawing.Point(6, 70);
+            this.brth.Name = "brth";
+            this.brth.Size = new System.Drawing.Size(450, 19);
+            this.brth.TabIndex = 14;
+            this.brth.Text = "18 лет исполнилось:";
             // 
             // guna2HtmlLabel13
             // 
@@ -351,8 +312,7 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel8;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel19;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel18;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel17;
+        private Guna.UI2.WinForms.Guna2HtmlLabel brth;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel7;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel13;
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
@@ -365,8 +325,6 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel3;
         private Guna.UI2.WinForms.Guna2HtmlLabel Year;
         private Guna.UI2.WinForms.Guna2HtmlLabel Year5;
-        private Guna.UI2.WinForms.Guna2HtmlLabel Year4;
-        private Guna.UI2.WinForms.Guna2HtmlLabel Year3;
         private Guna.UI2.WinForms.Guna2HtmlLabel Year2;
     }
 }
