@@ -22,20 +22,23 @@ namespace Date_Time_Calculator
         {
             DateTime Birthsday = guna2DateTimePicker2.Value;  // Дата рождения 
             DateTime b = DateTime.Now;  // дата (прямо сейчас) 
-            DateTime Yers18 = new DateTime(Birthsday.Year + 18, Birthsday.Month, Birthsday.Day, Birthsday.Hour, Birthsday.Minute, Birthsday.Second);
+            DateTime Yers18 = new DateTime(Birthsday.Year + 18, Birthsday.Month, Birthsday.Day, Birthsday.Hour, Birthsday.Minute, Birthsday.Second); // день рождение плюс 18 лет
             int needYear = b.Year; // присваиваю теперешний год переменной 
 
-            var nextBirthDay = new DateTime(b.Year, Birthsday.Month, Birthsday.Day); // создал переменную следующего дня рождения, Вставив в нее теперешний год,
+            var nextBirthDay = new DateTime(b.Year, Birthsday.Month, Birthsday.Day , Birthsday.Hour, Birthsday.Minute, Birthsday.Second); // день рождения но год изменён на 2023
                                                                                      //  месяц и день, от даты рождения 
+            int cYears = (int)countYears.Value; //беру значене с чек бокса N лет,  и перевожу его в int переменную
+           
+            var nYears = new DateTime(Birthsday.Year + cYears, Birthsday.Month, Birthsday.Day, Birthsday.Hour, Birthsday.Minute, Birthsday.Second); // дата рождения плюс N лет
 
             var year = 0;   // счётчики которые плюсуются от даты к дате 
-            var months = 0;
+            var months = 0; 
             var day = 0;
             var hours = 0;
             var minutes = 0;
             var secounds = 0;
 
-
+            // прохожусь от даты рождения до даты прямо сейчас , плюссую счётчики , и вывожу в лейбл значения счётчиков.
 
             while ((Birthsday < b && (Birthsday.AddYears(1) < b)))//ГОДА
             {
@@ -43,50 +46,43 @@ namespace Date_Time_Calculator
                 year++;   // плюсую  add years. 
             }
 
-            Year.Text = year.ToString() + "л.";
-
             while ((Birthsday < b && (Birthsday.AddMonths(1) < b))) // Месяца
             {
                 Birthsday = Birthsday.AddMonths(1);
                 months++;
             }
-            Year.Text += months.ToString() + "м.";
-
 
             while ((Birthsday < b && (Birthsday.AddDays(1) < b))) // Дни
             {
                 Birthsday = Birthsday.AddDays(1);
                 day++;
             }
-            Year.Text += day.ToString() + "д.";
 
             while ((Birthsday < b && (Birthsday.AddHours(1) < b))) // Часы
             {
                 Birthsday = Birthsday.AddHours(1);
                 hours++;
             }
-            Year.Text += hours.ToString() + "ч.";
 
             while ((Birthsday < b && (Birthsday.AddMinutes(1) < b))) // Минуты
             {
                 Birthsday = Birthsday.AddMinutes(1);
                 minutes++;
             }
-            Year.Text += minutes.ToString() + "м.";
 
             while ((Birthsday < b && (Birthsday.AddSeconds(1) < b))) // Секунды
             {
                 Birthsday = Birthsday.AddSeconds(1);
                 secounds++;
             }
-            Year.Text += secounds.ToString() + "с.";
-
-            // ------------------------------------------------------- До следующего дня рождения.
-
-            ; // обнуляю счётчики 
+            countLive.Text = $"Сколько живет: {year}л.{months}м.{day}д.{hours}ч.{minutes}мин.{secounds}с.";
 
 
 
+
+            ////////////////////////////////////////////////////////////До следующего дня рождения.
+            
+            // прохожусь от даты сейчвс до даты день рождения с изменнёным годом на 2023 для того чтобы рассчитать сколько от щас до следующего дня рождения 
             year = 0;   // счётчики которые плюсуются от даты к дате 
             months = 0;
             day = 0;
@@ -97,14 +93,9 @@ namespace Date_Time_Calculator
 
             while ((b < nextBirthDay && (b.AddYears(1) < nextBirthDay)))//ГОДА
             {
-
                 b = b.AddYears(1);
                 year++;
-
             }
-
-            Year2.Text = year.ToString() + "л.";
-
 
             while ((b < nextBirthDay && (b.AddMonths(1) < nextBirthDay))) // Месяца
             {
@@ -112,24 +103,20 @@ namespace Date_Time_Calculator
                 b = b.AddMonths(1);
                 months++;
             }
-            Year2.Text += months.ToString() + "м.";
-
-
+  
             while ((b < nextBirthDay && (b.AddDays(1) < nextBirthDay))) // Дни
             {
 
                 b = b.AddDays(1);
                 day++;
             }
-            Year2.Text += day.ToString() + "д.";
-
+           
             while ((b < nextBirthDay && (b.AddHours(1) < nextBirthDay))) // Часы
             {
 
                 b = b.AddHours(1);
                 hours++;
             }
-            Year2.Text += hours.ToString() + "ч.";
 
             while ((b < nextBirthDay && (b.AddMinutes(1) < nextBirthDay))) // Минуты
             {
@@ -137,7 +124,6 @@ namespace Date_Time_Calculator
                 b = b.AddMinutes(1);
                 minutes++;
             }
-            Year2.Text += minutes.ToString() + "м.";
 
             while ((b < nextBirthDay && (b.AddSeconds(1) < nextBirthDay))) // Секунды
             {
@@ -145,9 +131,9 @@ namespace Date_Time_Calculator
                 b = b.AddSeconds(1);
                 secounds++;
             }
-            Year2.Text += secounds.ToString() + "с.";
+          doNextBirthday.Text = $" До следующего день рождения: {year}л.{months}м.{day}д.{hours}ч.{minutes}мин.{secounds}с.";
 
-            // ------------------------------------------------------- 18 лет исполнится.
+            // ------------------------------------------------------- 18 лет исполнилось.
 
             // обнуляю счётчики 
             year = 0;
@@ -157,11 +143,10 @@ namespace Date_Time_Calculator
             minutes = 0;
             secounds = 0;
             DateTime c = DateTime.Now;
-            MessageBox.Show(c.ToString());
 
+          // иду от даты рождения +18 лет , до теперешней даты , и плюсую счётчик  , сколько наплюсовало столько и вывожу в лейбл .
 
-            MessageBox.Show(Yers18.ToString());
-            while ((Yers18 < c && (Yers18.AddYears(1) < c)))//ГОДА
+            while ((Yers18 < c && (Yers18.AddYears(1) < c)))//ГОДА 
             {
                 Yers18 = Yers18.AddYears(1);
 
@@ -213,11 +198,12 @@ namespace Date_Time_Calculator
             {
                 brth.Text = $"18 лет исполнилось : {year}л.{months}м.{day}д.{hours}ч.{minutes}м.{secounds}с. назад.";
             }
-            
 
-            ////////////////  ниже Исполнится черещ :
-           
-             
+
+            //////////////////////////////////////////////////////////// Исполнится 18 лет через  
+            // иду от тепершней даты к даты 18 лет + 18,  и плюсую счётчик, сколько наплюсовало столько и вывожу в лейбл
+
+
             while ((c < Yers18 && (c.AddYears(1) < Yers18)))//ГОДА
             {
                 c = c.AddYears(1);
@@ -265,12 +251,72 @@ namespace Date_Time_Calculator
                 secounds++;
 
             }
+
             if (c < Yers18)
             {
                 brth.Text = $"18 лет исполнится через : {year}л.{months}м.{day}д.{hours}ч.{minutes}м.{secounds}с.";
             }
-          
-            // Сдесь прожил больше 18 лет , сдесь нужно от даты |Years18 отнять DateTime.Now (b)
+
+            ///////////////////////////////////////////////////////////////// Через сколько исполнится N лет 
+            // обнуляю счётчики 
+            year = 0;
+            months = 0;
+            day = 0;
+            hours = 0;
+            minutes = 0;
+            secounds = 0;
+
+            // Прохожусь от даты сейчас до даты дня рождения + N лет , и плюсую счётчики
+
+            while ((c < nYears && (c.AddYears(1) < nYears)))//ГОДА
+            {
+                c = c.AddYears(1);
+
+                year++;
+            }
+
+
+            while ((c < nYears && (c.AddMonths(1) < nYears)))// Месяца
+            {
+                c = c.AddMonths(1);
+
+                months++;
+
+            }
+
+            while ((c < nYears && (c.AddDays(1) < nYears)))//Дни
+            {
+                c = c.AddDays(1);
+
+                day++;
+
+            }
+
+            while ((c < nYears && (c.AddHours(1) < nYears)))//Часы
+            {
+                c = c.AddHours(1);
+
+                hours++;
+
+            }
+
+            while ((c < nYears && (c.AddMinutes(1) < nYears)))//Минуты
+            {
+                c = c.AddMinutes(1);
+
+                minutes++;
+
+            }
+
+            while ((c < nYears && (c.AddSeconds(1) < nYears)))//Секунды
+            {
+                c = c.AddSeconds(1);
+
+                secounds++;
+
+            }
+
+            NYEARS.Text = $"{cYears} лет исполнится через: {year}л.{months}м.{day}д.{hours}ч.{minutes}м.{secounds}с.";
 
         }
     }
