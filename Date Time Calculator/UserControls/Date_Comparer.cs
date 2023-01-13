@@ -15,9 +15,17 @@ namespace Date_Time_Calculator.UserControls
     {
         public Date_Comparer()
         {
-            InitializeComponent();     
+            InitializeComponent();
+            timer1.Start();
+            unix();
         }
      
+        public void unix()
+        {
+            DateTime foo = DateTime.Now;
+            long unixTime = ((DateTimeOffset)foo).ToUnixTimeSeconds();
+            Unix.Text = $"Unix TS: {unixTime.ToString()}";
+        }
         private void guna2Button1_Click(object sender, EventArgs e)
         {
            
@@ -102,6 +110,12 @@ namespace Date_Time_Calculator.UserControls
 
 
 
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+         
+            unix();
         }
     }
 }

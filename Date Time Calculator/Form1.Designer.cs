@@ -346,9 +346,9 @@
             this.guna2Button25.ForeColor = System.Drawing.Color.Black;
             this.guna2Button25.HoverState.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.guna2Button25.HoverState.FillColor = System.Drawing.Color.WhiteSmoke;
-            this.guna2Button25.Location = new System.Drawing.Point(2, 0);
+            this.guna2Button25.Location = new System.Drawing.Point(2, 1);
             this.guna2Button25.Name = "guna2Button25";
-            this.guna2Button25.Size = new System.Drawing.Size(166, 54);
+            this.guna2Button25.Size = new System.Drawing.Size(166, 53);
             this.guna2Button25.TabIndex = 0;
             this.guna2Button25.Text = "Date Comparer";
             this.guna2Button25.Click += new System.EventHandler(this.guna2Button25_Click);
