@@ -125,7 +125,7 @@
             this.guna2HtmlLabel12.AutoSize = false;
             this.guna2HtmlLabel12.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel12.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel12.Location = new System.Drawing.Point(71, 15);
+            this.guna2HtmlLabel12.Location = new System.Drawing.Point(93, 17);
             this.guna2HtmlLabel12.Name = "guna2HtmlLabel12";
             this.guna2HtmlLabel12.Size = new System.Drawing.Size(189, 23);
             this.guna2HtmlLabel12.TabIndex = 32;
@@ -212,7 +212,7 @@
             this.guna2PictureBox1.FillColor = System.Drawing.Color.Gainsboro;
             this.guna2PictureBox1.Image = global::Date_Time_Calculator.Properties.Resources._11;
             this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(244, 5);
+            this.guna2PictureBox1.Location = new System.Drawing.Point(244, 7);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
             this.guna2PictureBox1.Size = new System.Drawing.Size(145, 48);
             this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -246,9 +246,9 @@
             // 
             this.guna2DateTimePicker1.CustomFormat = "MM/dd/yyyy HH:mm";
             this.guna2DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.guna2DateTimePicker1.Location = new System.Drawing.Point(385, 18);
+            this.guna2DateTimePicker1.Location = new System.Drawing.Point(364, 19);
             this.guna2DateTimePicker1.Name = "guna2DateTimePicker1";
-            this.guna2DateTimePicker1.Size = new System.Drawing.Size(122, 20);
+            this.guna2DateTimePicker1.Size = new System.Drawing.Size(127, 20);
             this.guna2DateTimePicker1.TabIndex = 34;
             // 
             // guna2Panel5
