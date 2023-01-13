@@ -28,9 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
+            this.res = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
@@ -38,17 +40,21 @@
             this.guna2DateTimePicker2 = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.guna2DateTimePicker1 = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.res = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2Panel5 = new Guna.UI2.WinForms.Guna2Panel();
+            this.Unix = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.guna2Panel1.SuspendLayout();
             this.guna2Panel3.SuspendLayout();
             this.guna2Panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
+            this.guna2Panel5.SuspendLayout();
             this.SuspendLayout();
             // 
             // guna2Panel1
             // 
             this.guna2Panel1.BorderColor = System.Drawing.Color.LightGray;
             this.guna2Panel1.BorderThickness = 1;
+            this.guna2Panel1.Controls.Add(this.guna2Panel5);
             this.guna2Panel1.Controls.Add(this.guna2Panel3);
             this.guna2Panel1.Controls.Add(this.guna2HtmlLabel1);
             this.guna2Panel1.Location = new System.Drawing.Point(3, 10);
@@ -81,6 +87,17 @@
             this.guna2Panel2.Name = "guna2Panel2";
             this.guna2Panel2.Size = new System.Drawing.Size(478, 117);
             this.guna2Panel2.TabIndex = 16;
+            // 
+            // res
+            // 
+            this.res.AutoSize = false;
+            this.res.BackColor = System.Drawing.Color.Transparent;
+            this.res.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.res.Location = new System.Drawing.Point(231, 69);
+            this.res.Name = "res";
+            this.res.Size = new System.Drawing.Size(27, 23);
+            this.res.TabIndex = 17;
+            this.res.Text = "0";
             // 
             // guna2HtmlLabel3
             // 
@@ -179,16 +196,30 @@
             this.guna2HtmlLabel1.TabIndex = 18;
             this.guna2HtmlLabel1.Text = "Leap Counter";
             // 
-            // res
+            // guna2Panel5
             // 
-            this.res.AutoSize = false;
-            this.res.BackColor = System.Drawing.Color.Transparent;
-            this.res.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.res.Location = new System.Drawing.Point(231, 69);
-            this.res.Name = "res";
-            this.res.Size = new System.Drawing.Size(27, 23);
-            this.res.TabIndex = 17;
-            this.res.Text = "0";
+            this.guna2Panel5.BorderColor = System.Drawing.Color.LightGray;
+            this.guna2Panel5.BorderThickness = 1;
+            this.guna2Panel5.Controls.Add(this.Unix);
+            this.guna2Panel5.Location = new System.Drawing.Point(8, 8);
+            this.guna2Panel5.Name = "guna2Panel5";
+            this.guna2Panel5.Size = new System.Drawing.Size(135, 31);
+            this.guna2Panel5.TabIndex = 24;
+            // 
+            // Unix
+            // 
+            this.Unix.AutoSize = false;
+            this.Unix.BackColor = System.Drawing.Color.Transparent;
+            this.Unix.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Unix.Location = new System.Drawing.Point(4, 7);
+            this.Unix.Name = "Unix";
+            this.Unix.Size = new System.Drawing.Size(121, 20);
+            this.Unix.TabIndex = 23;
+            this.Unix.Text = "Unix TS:";
+            // 
+            // timer1
+            // 
+            this.timer1.Interval = 1000;
             // 
             // Leap_Counter
             // 
@@ -202,6 +233,7 @@
             this.guna2Panel3.ResumeLayout(false);
             this.guna2Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
+            this.guna2Panel5.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -219,5 +251,8 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel3;
         private Guna.UI2.WinForms.Guna2HtmlLabel res;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel5;
+        private Guna.UI2.WinForms.Guna2HtmlLabel Unix;
+        private System.Windows.Forms.Timer timer1;
     }
 }

@@ -33,8 +33,6 @@
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2DateTimePicker2 = new Guna.UI2.WinForms.Guna2DateTimePicker();
-            this.guna2DateTimePicker1 = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.Sunday = new Guna.UI2.WinForms.Guna2CheckBox();
             this.Saturday = new Guna.UI2.WinForms.Guna2CheckBox();
             this.Friday = new Guna.UI2.WinForms.Guna2CheckBox();
@@ -42,7 +40,6 @@
             this.Wednesday = new Guna.UI2.WinForms.Guna2CheckBox();
             this.Tuesday = new Guna.UI2.WinForms.Guna2CheckBox();
             this.Monday = new Guna.UI2.WinForms.Guna2CheckBox();
-            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2Panel4 = new Guna.UI2.WinForms.Guna2Panel();
             this.res = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -51,12 +48,15 @@
             this.guna2Panel5 = new Guna.UI2.WinForms.Guna2Panel();
             this.Unix = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.guna2DateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.guna2DateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2Panel1.SuspendLayout();
             this.guna2Panel2.SuspendLayout();
             this.guna2Panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.guna2Panel4.SuspendLayout();
             this.guna2Panel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2Panel1
@@ -105,8 +105,9 @@
             // guna2Panel3
             // 
             this.guna2Panel3.BorderColor = System.Drawing.Color.LightGray;
-            this.guna2Panel3.Controls.Add(this.guna2DateTimePicker2);
             this.guna2Panel3.Controls.Add(this.guna2DateTimePicker1);
+            this.guna2Panel3.Controls.Add(this.guna2DateTimePicker2);
+            this.guna2Panel3.Controls.Add(this.guna2PictureBox1);
             this.guna2Panel3.Controls.Add(this.Sunday);
             this.guna2Panel3.Controls.Add(this.Saturday);
             this.guna2Panel3.Controls.Add(this.Friday);
@@ -114,43 +115,10 @@
             this.guna2Panel3.Controls.Add(this.Wednesday);
             this.guna2Panel3.Controls.Add(this.Tuesday);
             this.guna2Panel3.Controls.Add(this.Monday);
-            this.guna2Panel3.Controls.Add(this.guna2PictureBox1);
             this.guna2Panel3.Location = new System.Drawing.Point(17, 8);
             this.guna2Panel3.Name = "guna2Panel3";
             this.guna2Panel3.Size = new System.Drawing.Size(649, 74);
             this.guna2Panel3.TabIndex = 23;
-            // 
-            // guna2DateTimePicker2
-            // 
-            this.guna2DateTimePicker2.BorderColor = System.Drawing.Color.Silver;
-            this.guna2DateTimePicker2.BorderThickness = 1;
-            this.guna2DateTimePicker2.Checked = true;
-            this.guna2DateTimePicker2.FillColor = System.Drawing.Color.White;
-            this.guna2DateTimePicker2.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2DateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.guna2DateTimePicker2.Location = new System.Drawing.Point(364, 13);
-            this.guna2DateTimePicker2.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.guna2DateTimePicker2.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.guna2DateTimePicker2.Name = "guna2DateTimePicker2";
-            this.guna2DateTimePicker2.Size = new System.Drawing.Size(284, 36);
-            this.guna2DateTimePicker2.TabIndex = 25;
-            this.guna2DateTimePicker2.Value = new System.DateTime(2022, 12, 20, 13, 8, 54, 812);
-            // 
-            // guna2DateTimePicker1
-            // 
-            this.guna2DateTimePicker1.BorderColor = System.Drawing.Color.Silver;
-            this.guna2DateTimePicker1.BorderThickness = 1;
-            this.guna2DateTimePicker1.Checked = true;
-            this.guna2DateTimePicker1.FillColor = System.Drawing.Color.White;
-            this.guna2DateTimePicker1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.guna2DateTimePicker1.Location = new System.Drawing.Point(5, 13);
-            this.guna2DateTimePicker1.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.guna2DateTimePicker1.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.guna2DateTimePicker1.Name = "guna2DateTimePicker1";
-            this.guna2DateTimePicker1.Size = new System.Drawing.Size(278, 36);
-            this.guna2DateTimePicker1.TabIndex = 24;
-            this.guna2DateTimePicker1.Value = new System.DateTime(2022, 12, 20, 13, 8, 44, 514);
             // 
             // Sunday
             // 
@@ -159,7 +127,7 @@
             this.Sunday.CheckedState.BorderThickness = 0;
             this.Sunday.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.Sunday.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Sunday.Location = new System.Drawing.Point(243, 53);
+            this.Sunday.Location = new System.Drawing.Point(419, 53);
             this.Sunday.Name = "Sunday";
             this.Sunday.Size = new System.Drawing.Size(47, 17);
             this.Sunday.TabIndex = 16;
@@ -176,7 +144,7 @@
             this.Saturday.CheckedState.BorderThickness = 0;
             this.Saturday.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.Saturday.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Saturday.Location = new System.Drawing.Point(204, 53);
+            this.Saturday.Location = new System.Drawing.Point(380, 53);
             this.Saturday.Name = "Saturday";
             this.Saturday.Size = new System.Drawing.Size(47, 17);
             this.Saturday.TabIndex = 15;
@@ -193,7 +161,7 @@
             this.Friday.CheckedState.BorderThickness = 0;
             this.Friday.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.Friday.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Friday.Location = new System.Drawing.Point(164, 53);
+            this.Friday.Location = new System.Drawing.Point(340, 53);
             this.Friday.Name = "Friday";
             this.Friday.Size = new System.Drawing.Size(47, 17);
             this.Friday.TabIndex = 14;
@@ -210,7 +178,7 @@
             this.Thursday.CheckedState.BorderThickness = 0;
             this.Thursday.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.Thursday.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Thursday.Location = new System.Drawing.Point(124, 53);
+            this.Thursday.Location = new System.Drawing.Point(300, 53);
             this.Thursday.Name = "Thursday";
             this.Thursday.Size = new System.Drawing.Size(47, 17);
             this.Thursday.TabIndex = 13;
@@ -227,7 +195,7 @@
             this.Wednesday.CheckedState.BorderThickness = 0;
             this.Wednesday.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.Wednesday.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Wednesday.Location = new System.Drawing.Point(85, 53);
+            this.Wednesday.Location = new System.Drawing.Point(261, 53);
             this.Wednesday.Name = "Wednesday";
             this.Wednesday.Size = new System.Drawing.Size(47, 17);
             this.Wednesday.TabIndex = 12;
@@ -244,7 +212,7 @@
             this.Tuesday.CheckedState.BorderThickness = 0;
             this.Tuesday.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.Tuesday.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Tuesday.Location = new System.Drawing.Point(46, 53);
+            this.Tuesday.Location = new System.Drawing.Point(222, 53);
             this.Tuesday.Name = "Tuesday";
             this.Tuesday.Size = new System.Drawing.Size(47, 17);
             this.Tuesday.TabIndex = 11;
@@ -261,7 +229,7 @@
             this.Monday.CheckedState.BorderThickness = 0;
             this.Monday.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.Monday.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Monday.Location = new System.Drawing.Point(5, 53);
+            this.Monday.Location = new System.Drawing.Point(181, 53);
             this.Monday.Name = "Monday";
             this.Monday.Size = new System.Drawing.Size(47, 17);
             this.Monday.TabIndex = 10;
@@ -270,18 +238,6 @@
             this.Monday.UncheckedState.BorderRadius = 0;
             this.Monday.UncheckedState.BorderThickness = 0;
             this.Monday.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            // 
-            // guna2PictureBox1
-            // 
-            this.guna2PictureBox1.FillColor = System.Drawing.Color.Gainsboro;
-            this.guna2PictureBox1.Image = global::Date_Time_Calculator.Properties.Resources._11;
-            this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(257, 5);
-            this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.Size = new System.Drawing.Size(145, 53);
-            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.guna2PictureBox1.TabIndex = 9;
-            this.guna2PictureBox1.TabStop = false;
             // 
             // guna2Panel4
             // 
@@ -365,6 +321,36 @@
             this.timer1.Interval = 1000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // guna2DateTimePicker1
+            // 
+            this.guna2DateTimePicker1.CustomFormat = "MM/dd/yyyy HH:mm";
+            this.guna2DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.guna2DateTimePicker1.Location = new System.Drawing.Point(143, 16);
+            this.guna2DateTimePicker1.Name = "guna2DateTimePicker1";
+            this.guna2DateTimePicker1.Size = new System.Drawing.Size(128, 20);
+            this.guna2DateTimePicker1.TabIndex = 39;
+            // 
+            // guna2DateTimePicker2
+            // 
+            this.guna2DateTimePicker2.CustomFormat = "MM/dd/yyyy HH:mm";
+            this.guna2DateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.guna2DateTimePicker2.Location = new System.Drawing.Point(377, 16);
+            this.guna2DateTimePicker2.Name = "guna2DateTimePicker2";
+            this.guna2DateTimePicker2.Size = new System.Drawing.Size(128, 20);
+            this.guna2DateTimePicker2.TabIndex = 38;
+            // 
+            // guna2PictureBox1
+            // 
+            this.guna2PictureBox1.FillColor = System.Drawing.Color.Gainsboro;
+            this.guna2PictureBox1.Image = global::Date_Time_Calculator.Properties.Resources._11;
+            this.guna2PictureBox1.ImageRotate = 0F;
+            this.guna2PictureBox1.Location = new System.Drawing.Point(259, -1);
+            this.guna2PictureBox1.Name = "guna2PictureBox1";
+            this.guna2PictureBox1.Size = new System.Drawing.Size(145, 53);
+            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.guna2PictureBox1.TabIndex = 37;
+            this.guna2PictureBox1.TabStop = false;
+            // 
             // Date_Working_Counter
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -376,9 +362,9 @@
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel2.ResumeLayout(false);
             this.guna2Panel3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.guna2Panel4.ResumeLayout(false);
             this.guna2Panel5.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -397,15 +383,15 @@
         private Guna.UI2.WinForms.Guna2CheckBox Wednesday;
         private Guna.UI2.WinForms.Guna2CheckBox Tuesday;
         private Guna.UI2.WinForms.Guna2CheckBox Monday;
-        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel4;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel3;
-        private Guna.UI2.WinForms.Guna2DateTimePicker guna2DateTimePicker2;
-        private Guna.UI2.WinForms.Guna2DateTimePicker guna2DateTimePicker1;
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
         private Guna.UI2.WinForms.Guna2HtmlLabel res;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel5;
         private Guna.UI2.WinForms.Guna2HtmlLabel Unix;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.DateTimePicker guna2DateTimePicker1;
+        private System.Windows.Forms.DateTimePicker guna2DateTimePicker2;
+        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
     }
 }

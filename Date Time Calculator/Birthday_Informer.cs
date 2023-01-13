@@ -15,6 +15,8 @@ namespace Date_Time_Calculator
         public Birthday_Informer()
         {
             InitializeComponent();
+            timer2.Start();
+            unix();
 
         }
 
@@ -26,7 +28,12 @@ namespace Date_Time_Calculator
             timer1.Start();
 
         }
-
+        public void unix()
+        {
+            DateTime foo = DateTime.Now;
+            long unixTime = ((DateTimeOffset)foo).ToUnixTimeSeconds();
+            Unix.Text = $"Unix TS: {unixTime.ToString()}";
+        }
         public void BR()
         {
 
@@ -318,6 +325,11 @@ namespace Date_Time_Calculator
         private void timer1_Tick(object sender, EventArgs e)
         {
             BR();
+        }
+
+        private void timer2_Tick(object sender, EventArgs e)
+        {
+            unix();
         }
     }
 }
