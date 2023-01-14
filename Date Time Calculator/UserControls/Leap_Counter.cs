@@ -15,7 +15,7 @@ namespace Date_Time_Calculator.UserControls
         public Leap_Counter()
         {
             InitializeComponent();
-            timer1.Start();
+           timer1.Start();      
             unix();
         }
         public void unix()

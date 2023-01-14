@@ -143,7 +143,6 @@
             this.lAlldays.Name = "lAlldays";
             this.lAlldays.Size = new System.Drawing.Size(38, 23);
             this.lAlldays.TabIndex = 21;
-            this.lAlldays.Text = "0";
             // 
             // lDay
             // 
@@ -154,7 +153,6 @@
             this.lDay.Name = "lDay";
             this.lDay.Size = new System.Drawing.Size(41, 23);
             this.lDay.TabIndex = 20;
-            this.lDay.Text = "0";
             // 
             // lWeek
             // 
@@ -165,7 +163,6 @@
             this.lWeek.Name = "lWeek";
             this.lWeek.Size = new System.Drawing.Size(37, 23);
             this.lWeek.TabIndex = 19;
-            this.lWeek.Text = "0";
             // 
             // lMounse
             // 
@@ -176,7 +173,6 @@
             this.lMounse.Name = "lMounse";
             this.lMounse.Size = new System.Drawing.Size(37, 23);
             this.lMounse.TabIndex = 18;
-            this.lMounse.Text = "0";
             // 
             // lYear
             // 
@@ -187,7 +183,6 @@
             this.lYear.Name = "lYear";
             this.lYear.Size = new System.Drawing.Size(126, 23);
             this.lYear.TabIndex = 17;
-            this.lYear.Text = "0";
             // 
             // guna2HtmlLabel7
             // 
@@ -281,7 +276,6 @@
             this.lMilisecounds.Name = "lMilisecounds";
             this.lMilisecounds.Size = new System.Drawing.Size(41, 23);
             this.lMilisecounds.TabIndex = 24;
-            this.lMilisecounds.Text = "0";
             // 
             // lSecound
             // 
@@ -292,7 +286,6 @@
             this.lSecound.Name = "lSecound";
             this.lSecound.Size = new System.Drawing.Size(29, 23);
             this.lSecound.TabIndex = 23;
-            this.lSecound.Text = "0";
             // 
             // lMinuts
             // 
@@ -303,7 +296,6 @@
             this.lMinuts.Name = "lMinuts";
             this.lMinuts.Size = new System.Drawing.Size(28, 23);
             this.lMinuts.TabIndex = 22;
-            this.lMinuts.Text = "0";
             // 
             // lHour
             // 
@@ -314,7 +306,6 @@
             this.lHour.Name = "lHour";
             this.lHour.Size = new System.Drawing.Size(26, 23);
             this.lHour.TabIndex = 21;
-            this.lHour.Text = "0";
             // 
             // guna2HtmlLabel11
             // 

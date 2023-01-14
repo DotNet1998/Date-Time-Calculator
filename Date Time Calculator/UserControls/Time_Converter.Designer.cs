@@ -30,6 +30,8 @@
         {
             this.components = new System.ComponentModel.Container();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2Panel5 = new Guna.UI2.WinForms.Guna2Panel();
+            this.Unix = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
             this.res = new Guna.UI2.WinForms.Guna2TextBox();
             this.vvod = new Guna.UI2.WinForms.Guna2TextBox();
@@ -40,13 +42,11 @@
             this.ComboBox1 = new Guna.UI2.WinForms.Guna2ComboBox();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2Panel5 = new Guna.UI2.WinForms.Guna2Panel();
-            this.Unix = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.guna2Panel1.SuspendLayout();
+            this.guna2Panel5.SuspendLayout();
             this.guna2Panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
-            this.guna2Panel5.SuspendLayout();
             this.SuspendLayout();
             // 
             // guna2Panel1
@@ -60,6 +60,27 @@
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.Size = new System.Drawing.Size(833, 364);
             this.guna2Panel1.TabIndex = 2;
+            // 
+            // guna2Panel5
+            // 
+            this.guna2Panel5.BorderColor = System.Drawing.Color.LightGray;
+            this.guna2Panel5.BorderThickness = 1;
+            this.guna2Panel5.Controls.Add(this.Unix);
+            this.guna2Panel5.Location = new System.Drawing.Point(9, 8);
+            this.guna2Panel5.Name = "guna2Panel5";
+            this.guna2Panel5.Size = new System.Drawing.Size(135, 31);
+            this.guna2Panel5.TabIndex = 25;
+            // 
+            // Unix
+            // 
+            this.Unix.AutoSize = false;
+            this.Unix.BackColor = System.Drawing.Color.Transparent;
+            this.Unix.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Unix.Location = new System.Drawing.Point(4, 7);
+            this.Unix.Name = "Unix";
+            this.Unix.Size = new System.Drawing.Size(121, 20);
+            this.Unix.TabIndex = 23;
+            this.Unix.Text = "Unix TS:";
             // 
             // guna2Panel3
             // 
@@ -95,6 +116,7 @@
             this.res.Name = "res";
             this.res.PasswordChar = '\0';
             this.res.PlaceholderText = "";
+            this.res.ReadOnly = true;
             this.res.SelectedText = "";
             this.res.Size = new System.Drawing.Size(109, 29);
             this.res.TabIndex = 29;
@@ -233,27 +255,6 @@
             this.guna2HtmlLabel1.TabIndex = 18;
             this.guna2HtmlLabel1.Text = "Time Converter";
             // 
-            // guna2Panel5
-            // 
-            this.guna2Panel5.BorderColor = System.Drawing.Color.LightGray;
-            this.guna2Panel5.BorderThickness = 1;
-            this.guna2Panel5.Controls.Add(this.Unix);
-            this.guna2Panel5.Location = new System.Drawing.Point(9, 8);
-            this.guna2Panel5.Name = "guna2Panel5";
-            this.guna2Panel5.Size = new System.Drawing.Size(135, 31);
-            this.guna2Panel5.TabIndex = 25;
-            // 
-            // Unix
-            // 
-            this.Unix.AutoSize = false;
-            this.Unix.BackColor = System.Drawing.Color.Transparent;
-            this.Unix.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Unix.Location = new System.Drawing.Point(4, 7);
-            this.Unix.Name = "Unix";
-            this.Unix.Size = new System.Drawing.Size(121, 20);
-            this.Unix.TabIndex = 23;
-            this.Unix.Text = "Unix TS:";
-            // 
             // timer1
             // 
             this.timer1.Interval = 1000;
@@ -268,9 +269,9 @@
             this.Name = "Time_Converter";
             this.Size = new System.Drawing.Size(839, 385);
             this.guna2Panel1.ResumeLayout(false);
+            this.guna2Panel5.ResumeLayout(false);
             this.guna2Panel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
-            this.guna2Panel5.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

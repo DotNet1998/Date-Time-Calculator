@@ -30,24 +30,24 @@
         {
             this.components = new System.ComponentModel.Container();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2Panel5 = new Guna.UI2.WinForms.Guna2Panel();
+            this.Unix = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2DateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.guna2DateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             this.res = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2Panel5 = new Guna.UI2.WinForms.Guna2Panel();
-            this.Unix = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.guna2DateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.guna2DateTimePicker2 = new System.Windows.Forms.DateTimePicker();
-            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2Panel1.SuspendLayout();
-            this.guna2Panel3.SuspendLayout();
-            this.guna2Panel2.SuspendLayout();
             this.guna2Panel5.SuspendLayout();
+            this.guna2Panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
+            this.guna2Panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // guna2Panel1
@@ -62,6 +62,27 @@
             this.guna2Panel1.Size = new System.Drawing.Size(833, 364);
             this.guna2Panel1.TabIndex = 1;
             // 
+            // guna2Panel5
+            // 
+            this.guna2Panel5.BorderColor = System.Drawing.Color.LightGray;
+            this.guna2Panel5.BorderThickness = 1;
+            this.guna2Panel5.Controls.Add(this.Unix);
+            this.guna2Panel5.Location = new System.Drawing.Point(8, 8);
+            this.guna2Panel5.Name = "guna2Panel5";
+            this.guna2Panel5.Size = new System.Drawing.Size(135, 31);
+            this.guna2Panel5.TabIndex = 24;
+            // 
+            // Unix
+            // 
+            this.Unix.AutoSize = false;
+            this.Unix.BackColor = System.Drawing.Color.Transparent;
+            this.Unix.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Unix.Location = new System.Drawing.Point(4, 7);
+            this.Unix.Name = "Unix";
+            this.Unix.Size = new System.Drawing.Size(121, 20);
+            this.Unix.TabIndex = 23;
+            this.Unix.Text = "Unix TS:";
+            // 
             // guna2Panel3
             // 
             this.guna2Panel3.BorderColor = System.Drawing.Color.LightGray;
@@ -75,6 +96,36 @@
             this.guna2Panel3.Name = "guna2Panel3";
             this.guna2Panel3.Size = new System.Drawing.Size(649, 204);
             this.guna2Panel3.TabIndex = 21;
+            // 
+            // guna2DateTimePicker1
+            // 
+            this.guna2DateTimePicker1.CustomFormat = "MM/dd/yyyy HH:mm";
+            this.guna2DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.guna2DateTimePicker1.Location = new System.Drawing.Point(142, 28);
+            this.guna2DateTimePicker1.Name = "guna2DateTimePicker1";
+            this.guna2DateTimePicker1.Size = new System.Drawing.Size(128, 20);
+            this.guna2DateTimePicker1.TabIndex = 42;
+            // 
+            // guna2DateTimePicker2
+            // 
+            this.guna2DateTimePicker2.CustomFormat = "MM/dd/yyyy HH:mm";
+            this.guna2DateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.guna2DateTimePicker2.Location = new System.Drawing.Point(376, 28);
+            this.guna2DateTimePicker2.Name = "guna2DateTimePicker2";
+            this.guna2DateTimePicker2.Size = new System.Drawing.Size(128, 20);
+            this.guna2DateTimePicker2.TabIndex = 41;
+            // 
+            // guna2PictureBox1
+            // 
+            this.guna2PictureBox1.FillColor = System.Drawing.Color.Gainsboro;
+            this.guna2PictureBox1.Image = global::Date_Time_Calculator.Properties.Resources._11;
+            this.guna2PictureBox1.ImageRotate = 0F;
+            this.guna2PictureBox1.Location = new System.Drawing.Point(258, 11);
+            this.guna2PictureBox1.Name = "guna2PictureBox1";
+            this.guna2PictureBox1.Size = new System.Drawing.Size(145, 53);
+            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.guna2PictureBox1.TabIndex = 40;
+            this.guna2PictureBox1.TabStop = false;
             // 
             // guna2Panel2
             // 
@@ -152,60 +203,10 @@
             this.guna2HtmlLabel1.TabIndex = 18;
             this.guna2HtmlLabel1.Text = "Leap Counter";
             // 
-            // guna2Panel5
-            // 
-            this.guna2Panel5.BorderColor = System.Drawing.Color.LightGray;
-            this.guna2Panel5.BorderThickness = 1;
-            this.guna2Panel5.Controls.Add(this.Unix);
-            this.guna2Panel5.Location = new System.Drawing.Point(8, 8);
-            this.guna2Panel5.Name = "guna2Panel5";
-            this.guna2Panel5.Size = new System.Drawing.Size(135, 31);
-            this.guna2Panel5.TabIndex = 24;
-            // 
-            // Unix
-            // 
-            this.Unix.AutoSize = false;
-            this.Unix.BackColor = System.Drawing.Color.Transparent;
-            this.Unix.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Unix.Location = new System.Drawing.Point(4, 7);
-            this.Unix.Name = "Unix";
-            this.Unix.Size = new System.Drawing.Size(121, 20);
-            this.Unix.TabIndex = 23;
-            this.Unix.Text = "Unix TS:";
-            // 
             // timer1
             // 
             this.timer1.Interval = 1000;
-            // 
-            // guna2DateTimePicker1
-            // 
-            this.guna2DateTimePicker1.CustomFormat = "MM/dd/yyyy HH:mm";
-            this.guna2DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.guna2DateTimePicker1.Location = new System.Drawing.Point(142, 28);
-            this.guna2DateTimePicker1.Name = "guna2DateTimePicker1";
-            this.guna2DateTimePicker1.Size = new System.Drawing.Size(128, 20);
-            this.guna2DateTimePicker1.TabIndex = 42;
-            // 
-            // guna2DateTimePicker2
-            // 
-            this.guna2DateTimePicker2.CustomFormat = "MM/dd/yyyy HH:mm";
-            this.guna2DateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.guna2DateTimePicker2.Location = new System.Drawing.Point(376, 28);
-            this.guna2DateTimePicker2.Name = "guna2DateTimePicker2";
-            this.guna2DateTimePicker2.Size = new System.Drawing.Size(128, 20);
-            this.guna2DateTimePicker2.TabIndex = 41;
-            // 
-            // guna2PictureBox1
-            // 
-            this.guna2PictureBox1.FillColor = System.Drawing.Color.Gainsboro;
-            this.guna2PictureBox1.Image = global::Date_Time_Calculator.Properties.Resources._11;
-            this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(258, 11);
-            this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.Size = new System.Drawing.Size(145, 53);
-            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.guna2PictureBox1.TabIndex = 40;
-            this.guna2PictureBox1.TabStop = false;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // Leap_Counter
             // 
@@ -216,10 +217,10 @@
             this.Name = "Leap_Counter";
             this.Size = new System.Drawing.Size(839, 385);
             this.guna2Panel1.ResumeLayout(false);
-            this.guna2Panel3.ResumeLayout(false);
-            this.guna2Panel2.ResumeLayout(false);
             this.guna2Panel5.ResumeLayout(false);
+            this.guna2Panel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
+            this.guna2Panel2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -236,9 +237,9 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel res;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel5;
         private Guna.UI2.WinForms.Guna2HtmlLabel Unix;
-        private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.DateTimePicker guna2DateTimePicker1;
         private System.Windows.Forms.DateTimePicker guna2DateTimePicker2;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
+        private System.Windows.Forms.Timer timer1;
     }
 }
